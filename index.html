@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.add('js');</script>
+  <meta name="description" content="INKHAUS Studio — estudio de tatuajes independiente en Barcelona. Blackwork, fine line, neotradicional y realismo. Diseño 100% original con cita previa.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="INKHAUS — Estudio de tatuajes · Barcelona">
+  <meta property="og:description" content="Blackwork, fine line, neotradicional y realismo. Diseño 100% original, higiene de quirófano y cita previa.">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b0a09">
+  <title>INKHAUS — Estudio de tatuajes · Barcelona</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%230b0a09'/%3E%3Cpath d='M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4' stroke='%23e23b2e' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="INKHAUS, ir al inicio">
+        <svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1"/>
+        </svg>
+        INK<span>HAUS</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a class="nav__link" href="#estudio">Estudio</a>
+        <a class="nav__link" href="#estilos">Estilos</a>
+        <a class="nav__link" href="#artistas">Artistas</a>
+        <a class="nav__link" href="#galeria">Galería</a>
+        <a class="nav__link" href="#proceso">Proceso</a>
+        <a class="nav__link nav__link--cta" href="#reserva">Reservar</a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm header__cta magnetic" href="#reserva">
+        <span>Reservar cita</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 8h10M9 4l4 4-4 4"/>
+        </svg>
+      </a>
+
+      <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal>
+            <span class="live-dot" aria-hidden="true"></span>
+            Estudio independiente · Barcelona
+          </p>
+          <h1 class="hero__title" data-reveal style="--d:.05s">
+            <span class="line">Arte que</span>
+            <span class="line line--accent">permanece</span>
+          </h1>
+          <p class="hero__lead" data-reveal style="--d:.12s">
+            Tatuajes originales, dibujados a mano y pensados para envejecer bien.
+            Sin copias, sin prisas, sin ataduras.
+          </p>
+          <div class="hero__actions" data-reveal style="--d:.18s">
+            <a class="btn btn--primary magnetic" href="#reserva">
+              <span>Reserva tu cita</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </a>
+            <a class="btn btn--ghost magnetic" href="#galeria">
+              <span>Ver galería</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12 12 4M6 4h6v6"/>
+              </svg>
+            </a>
+          </div>
+          <div class="hero__stats" data-reveal style="--d:.24s">
+            <div class="stat">
+              <span class="stat__num" data-target="12" data-suffix="+">0+</span>
+              <span class="stat__label">Años de tinta</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-target="3.4" data-decimals="1" data-suffix="K">0K</span>
+              <span class="stat__label">Piezas únicas</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-target="100" data-suffix="%">0%</span>
+              <span class="stat__label">Diseño original</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal style="--d:.14s">
+          <div class="hero__ring" aria-hidden="true"></div>
+          <div class="hero__stack">
+            <div class="hero__card">
+              <span class="hero__tag">Diseño original</span>
+              <svg class="snake" viewBox="0 0 360 440" role="img" aria-label="Serpiente tatuada en estilo blackwork">
+                <g fill="none" stroke="#e23b2e" stroke-width="1.5" opacity=".55">
+                  <circle cx="180" cy="220" r="118"/>
+                  <circle cx="180" cy="220" r="104" stroke-dasharray="2 10" opacity=".7"/>
+                  <g stroke-linecap="round">
+                    <path d="M180 84V64M180 376v-20M44 220H64M316 220h-20"/>
+                    <path d="M84 124l14 14M276 316l-14-14M276 124l-14 14M84 316l14-14"/>
+                    <path d="M122 90l7 18M238 350l-7-18M310 176l-18 7M50 264l18-7"/>
+                    <path d="M238 90l-7 18M122 350l7-18M50 176l18 7M310 264l-18-7"/>
+                  </g>
+                </g>
+                <g fill="none" stroke="#141311" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M100 90C150 50 240 60 264 118c22 54-38 88-90 76-50-12-70 30-30 62 44 34 128 22 144 74 12 42-34 68-82 56" stroke-width="26"/>
+                  <path d="M100 90C150 50 240 60 264 118c22 54-38 88-90 76-50-12-70 30-30 62 44 34 128 22 144 74 12 42-34 68-82 56" stroke="#efe8da" stroke-width="2.4" stroke-dasharray="1 14" opacity=".55"/>
+                </g>
+                <g transform="translate(100 90) rotate(-28)">
+                  <path d="M-36 0C-36-22-12-32 10-25 30-18 40 0 31 15 22 29-2 31-16 23-28 16-36 8-36 0Z" fill="#141311"/>
+                  <circle cx="-8" cy="-9" r="3.6" fill="#efe8da"/>
+                  <circle cx="14" cy="-4" r="3.6" fill="#efe8da"/>
+                  <path d="M-36 2c-14 0-22-4-30-10M-36 2c-14 2-22 6-30 10" fill="none" stroke="#e23b2e" stroke-width="3" stroke-linecap="round"/>
+                  <path d="M-20 14l-5 12M-2 16l-1 12" fill="none" stroke="#efe8da" stroke-width="2.5" stroke-linecap="round"/>
+                </g>
+                <path d="M300 74l4 10 10 4-10 4-4 10-4-10-10-4 10-4Z" fill="#e23b2e"/>
+                <path d="M60 340l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#141311" opacity=".5"/>
+                <circle cx="312" cy="180" r="4" fill="#e23b2e"/>
+                <circle cx="70" cy="150" r="3" fill="#141311" opacity=".4"/>
+              </svg>
+              <span class="hero__cardfoot">Flash 014 · 2026</span>
+            </div>
+            <div class="badge-wrap" aria-hidden="true">
+              <svg class="badge" viewBox="0 0 200 200">
+                <defs>
+                  <path id="badgePath" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/>
+                </defs>
+                <text><textPath href="#badgePath">TINTA · ACTITUD · ARTE · DESDE 2012 · BCN · </textPath></text>
+                <path class="badge__star" d="M100 86l5.3 10.7 11.8 1.7-8.5 8.3 2 11.7-10.6-5.5-10.6 5.5 2-11.7-8.5-8.3 11.8-1.7z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#estudio" aria-label="Bajar al estudio">
+        <span>Scroll</span>
+        <span class="hero__scrollline" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Custom tattoo</span><span class="marquee__dot"></span>
+          <span>Blackwork</span><span class="marquee__dot"></span>
+          <span>Fine line</span><span class="marquee__dot"></span>
+          <span>Neotradicional</span><span class="marquee__dot"></span>
+          <span>Realismo</span><span class="marquee__dot"></span>
+          <span>Geométrico</span><span class="marquee__dot"></span>
+          <span>Lettering</span><span class="marquee__dot"></span>
+          <span>Barcelona</span><span class="marquee__dot"></span>
+          <span>Desde 2012</span><span class="marquee__dot"></span>
+        </div>
+        <div class="marquee__group">
+          <span>Custom tattoo</span><span class="marquee__dot"></span>
+          <span>Blackwork</span><span class="marquee__dot"></span>
+          <span>Fine line</span><span class="marquee__dot"></span>
+          <span>Neotradicional</span><span class="marquee__dot"></span>
+          <span>Realismo</span><span class="marquee__dot"></span>
+          <span>Geométrico</span><span class="marquee__dot"></span>
+          <span>Lettering</span><span class="marquee__dot"></span>
+          <span>Barcelona</span><span class="marquee__dot"></span>
+          <span>Desde 2012</span><span class="marquee__dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section about" id="estudio">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">01 — El estudio</p>
+          <h2 class="section__title">No tatuamos modas.<br><span class="outline">Tatuamos historias.</span></h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__art" data-reveal>
+            <div class="about__card">
+              <span class="about__tag">Inkhaus · Est. 2012</span>
+              <svg class="about__eye" viewBox="0 0 320 400" aria-hidden="true">
+                <g fill="none" stroke="#141311" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M32 200C100 116 220 116 288 200 220 284 100 284 32 200Z"/>
+                  <circle cx="160" cy="200" r="56"/>
+                  <circle cx="160" cy="200" r="24" fill="#141311"/>
+                  <circle cx="160" cy="200" r="11" stroke="#efe8da" stroke-width="3"/>
+                  <path d="M160 144V88M160 312v-56M104 200H48M272 200h-56"/>
+                  <path d="M120 152 100 132M200 152l20-20M120 248l-20 20M200 248l20 20"/>
+                  <path d="M160 88l-9-14M160 88l9-14M160 88V70"/>
+                  <path d="M134 284c-2 16 2 26 8 34M186 284c2 16-2 26-8 34"/>
+                  <path d="M64 64l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#141311" stroke="none"/>
+                  <path d="M256 320l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#141311" stroke="none"/>
+                </g>
+                <circle cx="160" cy="200" r="130" fill="none" stroke="#e23b2e" stroke-width="1.5" opacity=".45" stroke-dasharray="3 9"/>
+              </svg>
+              <span class="about__foot">Archivo · Pieza 014</span>
+            </div>
+            <span class="about__sticker">100%<br>custom</span>
+          </div>
+
+          <div class="about__body">
+            <p class="about__lead" data-reveal>
+              Inkhaus nació en 2012 como un sótano con dos máquinas y una idea clara:
+              el tatuaje no es un producto, es una colaboración.
+            </p>
+            <p data-reveal>
+              Trabajamos con cita previa, sin walk-ins masivos. Cada pieza se dibuja desde cero
+              para tu cuerpo, tu historia y tu piel. Nos obsesiona la composición, el trazo y
+              cómo envejece la tinta con los años.
+            </p>
+
+            <ul class="values">
+              <li data-reveal>
+                <span class="values__num">01</span>
+                <div>
+                  <h3>Diseño original</h3>
+                  <p>Nada de copias ni catálogos. Tu idea se convierte en una pieza irrepetible.</p>
+                </div>
+              </li>
+              <li data-reveal>
+                <span class="values__num">02</span>
+                <div>
+                  <h3>Higiene total</h3>
+                  <p>Material estéril, protocolos certificados y un espacio impecable.</p>
+                </div>
+              </li>
+              <li data-reveal>
+                <span class="values__num">03</span>
+                <div>
+                  <h3>Hecho para durar</h3>
+                  <p>Componemos pensando en cómo se verá tu tatuaje dentro de 20 años.</p>
+                </div>
+              </li>
+            </ul>
+
+            <a class="link-arrow" href="#proceso" data-reveal>
+              Descubre el proceso
+              <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section styles" id="estilos">
+      <div class="container">
+        <div class="section__head section__head--row" data-reveal>
+          <div>
+            <p class="eyebrow">02 — Especialidades</p>
+            <h2 class="section__title">Cada piel,<br>un <span class="red">lenguaje.</span></h2>
+          </div>
+          <p class="section__intro">
+            Trabajamos seis disciplinas, pero solo un criterio: que el tatuaje
+            tenga sentido contigo. Elegimos el estilo contigo, no por moda.
+          </p>
+        </div>
+
+        <div class="styles__grid">
+          <article class="style-card" data-reveal>
+            <div class="style-card__top">
+              <span class="style-card__num">01</span>
+              <svg class="style-card__icon" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 6c6 8 12 15 12 21a12 12 0 0 1-24 0c0-6 6-13 12-21Z"/>
+                <path d="M24 21v15M19 36h10" opacity=".5"/>
+              </svg>
+            </div>
+            <h3>Blackwork</h3>
+            <p>Negro sólido, contraste y grandes masas. Piezas que golpean a primera vista.</p>
+            <div class="style-card__foot">
+              <span>Sesiones 4–8 h</span>
+              <span class="style-card__arrow">↗</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-reveal style="--d:.05s">
+            <div class="style-card__top">
+              <span class="style-card__num">02</span>
+              <svg class="style-card__icon" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M34 6 14 26l-2 10 10-2L42 14Z"/>
+                <path d="M10 38l-4 4M22 18l8 8"/>
+              </svg>
+            </div>
+            <h3>Fine line</h3>
+            <p>Línea fina, detalles delicados y composiciones limpias. Minimalismo que se queda.</p>
+            <div class="style-card__foot">
+              <span>Sesiones 2–4 h</span>
+              <span class="style-card__arrow">↗</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-reveal style="--d:.1s">
+            <div class="style-card__top">
+              <span class="style-card__num">03</span>
+              <svg class="style-card__icon" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 10c8-2 14 4 13 12-1 7-7 10-13 9"/>
+                <path d="M24 10c-7-2-13 3-13 10 0 6 5 10 11 10"/>
+                <path d="M24 18c5-1 8 3 7 7-1 5-7 6-10 3-3-3-2-8 3-9"/>
+                <path d="M24 33v8"/>
+              </svg>
+            </div>
+            <h3>Neotradicional</h3>
+            <p>Volumen, color y narrativa ilustrada. Clásico con acento contemporáneo.</p>
+            <div class="style-card__foot">
+              <span>Sesiones 3–6 h</span>
+              <span class="style-card__arrow">↗</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-reveal>
+            <div class="style-card__top">
+              <span class="style-card__num">04</span>
+              <svg class="style-card__icon" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 24c6-7 30-7 36 0-6 7-30 7-36 0Z"/>
+                <circle cx="24" cy="24" r="7"/>
+                <circle cx="24" cy="24" r="2.4" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Realismo</h3>
+            <p>Luz, sombra y textura para retratos y piezas hiperdetalladas.</p>
+            <div class="style-card__foot">
+              <span>Sesiones 5–8 h</span>
+              <span class="style-card__arrow">↗</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-reveal style="--d:.05s">
+            <div class="style-card__top">
+              <span class="style-card__num">05</span>
+              <svg class="style-card__icon" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 5 43 38H5Z"/>
+                <circle cx="24" cy="27" r="8"/>
+                <path d="M24 5v33"/>
+              </svg>
+            </div>
+            <h3>Geométrico</h3>
+            <p>Precisión, simetría y patrones que dialogan con la anatomía.</p>
+            <div class="style-card__foot">
+              <span>Sesiones 2–5 h</span>
+              <span class="style-card__arrow">↗</span>
+            </div>
+          </article>
+
+          <article class="style-card" data-reveal style="--d:.1s">
+            <div class="style-card__top">
+              <span class="style-card__num">06</span>
+              <svg class="style-card__icon" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <text x="24" y="33" text-anchor="middle" font-family="'Anton', sans-serif" font-size="25" fill="currentColor" stroke="none">Aa</text>
+              </svg>
+            </div>
+            <h3>Lettering</h3>
+            <p>Tipografía dibujada a mano. Palabras que se leen como imágenes.</p>
+            <div class="style-card__foot">
+              <span>Sesiones 1–3 h</span>
+              <span class="style-card__arrow">↗</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section artists" id="artistas">
+      <div class="container">
+        <div class="section__head section__head--row" data-reveal>
+          <div>
+            <p class="eyebrow">03 — Las manos</p>
+            <h2 class="section__title">Tres formas de<br>entender la <span class="outline">tinta.</span></h2>
+          </div>
+          <a class="link-arrow" href="#reserva">
+            Trabaja con nosotros
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12 12 4M6 4h6v6"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="artists__grid">
+          <article class="artist" data-reveal style="--a:#b8271c">
+            <div class="artist__visual">
+              <span class="artist__initial" aria-hidden="true">V</span>
+              <span class="artist__no" aria-hidden="true">01</span>
+              <span class="artist__tag">Blackwork</span>
+            </div>
+            <div class="artist__info">
+              <div>
+                <h3 class="artist__name">Vera Koval</h3>
+                <p class="artist__role">Ornamental · Blackwork</p>
+              </div>
+              <a class="artist__link" href="#galeria">Portfolio ↗</a>
+            </div>
+          </article>
+
+          <article class="artist" data-reveal style="--a:#a06a22" data-delay="1">
+            <div class="artist__visual">
+              <span class="artist__initial" aria-hidden="true">D</span>
+              <span class="artist__no" aria-hidden="true">02</span>
+              <span class="artist__tag">Neotradicional</span>
+            </div>
+            <div class="artist__info">
+              <div>
+                <h3 class="artist__name">Dante Ruiz</h3>
+                <p class="artist__role">Color · Neotradicional</p>
+              </div>
+              <a class="artist__link" href="#galeria">Portfolio ↗</a>
+            </div>
+          </article>
+
+          <article class="artist" data-reveal style="--a:#5b6a83" data-delay="2">
+            <div class="artist__visual">
+              <span class="artist__initial" aria-hidden="true">N</span>
+              <span class="artist__no" aria-hidden="true">03</span>
+              <span class="artist__tag">Fine line</span>
+            </div>
+            <div class="artist__info">
+              <div>
+                <h3 class="artist__name">Noa Serrano</h3>
+                <p class="artist__role">Fine line · Microrealismo</p>
+              </div>
+              <a class="artist__link" href="#galeria">Portfolio ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section__head section__head--row" data-reveal>
+          <div>
+            <p class="eyebrow">04 — El trabajo</p>
+            <h2 class="section__title">Tinta que<br>se <span class="red">queda.</span></h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filtrar galería">
+            <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">Todo</button>
+            <button class="filter" type="button" data-filter="blackwork" aria-pressed="false">Blackwork</button>
+            <button class="filter" type="button" data-filter="fineline" aria-pressed="false">Fine line</button>
+            <button class="filter" type="button" data-filter="neotradicional" aria-pressed="false">Neotradicional</button>
+            <button class="filter" type="button" data-filter="geometrico" aria-pressed="false">Geométrico</button>
+            <button class="filter" type="button" data-filter="lettering" aria-pressed="false">Lettering</button>
+          </div>
+        </div>
+
+        <div class="gallery__grid" id="galleryGrid">
+          <button class="tile tile--cream" type="button" data-cat="blackwork" data-title="Polilla nocturna" data-style="Blackwork" aria-label="Ampliar Polilla nocturna, Blackwork">
+            <span class="tile__art" aria-hidden="true">
+              <svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="150" cy="166" rx="12" ry="58"/>
+                <circle cx="150" cy="94" r="15"/>
+                <path d="M142 82C126 58 104 50 92 58M158 82c16-24 38-32 50-24"/>
+                <path d="M144 120C104 86 54 96 48 136c-6 36 38 54 98 32Z"/>
+                <path d="M146 160c-34 16-64 42-54 74 10 32 50 18 58-20Z"/>
+                <path d="M156 120c40-34 90-24 96 16 6 36-38 54-98 32Z"/>
+                <path d="M154 160c34 16 64 42 54 74-10 32-50 18-58-20Z"/>
+                <circle cx="92" cy="134" r="13"/>
+                <circle cx="104" cy="212" r="9"/>
+                <circle cx="208" cy="134" r="13"/>
+                <circle cx="196" cy="212" r="9"/>
+                <path d="M62 116c10-8 24-8 34 0M204 116c10-8 24-8 34 0"/>
+              </svg>
+            </span>
+            <span class="tile__overlay" aria-hidden="true">
+              <span class="tile__caption"><strong>Polilla nocturna</strong><em>Blackwork</em></span>
+              <span class="tile__zoom">+</span>
+            </span>
+          </button>
+
+          <button class="tile tile--red" type="button" data-cat="neotradicional" data-title="Corazón y daga" data-style="Neotradicional" aria-label="Ampliar Corazón y daga, Neotradicional">
+            <span class="tile__art" aria-hidden="true">
+              <svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M150 250C82 206 52 166 52 122c0-34 26-56 56-56 21 0 36 12 42 28 6-16 21-28 42-28 30 0 56 22 56 56 0 44-30 84-98 128Z"/>
+                <path d="M150 28 133 112l17 20 17-20Z" fill="currentColor"/>
+                <path d="M114 138h72" stroke-width="7"/>
+                <path d="M150 138v58" stroke-width="6"/>
+                <path d="M138 196h24" stroke-width="6"/>
+                <circle cx="150" cy="210" r="10"/>
+                <path d="M94 108c0-16 12-28 28-30"/>
+                <path d="M228 176c-6 10-16 20-28 28"/>
+              </svg>
+            </span>
+            <span class="tile__overlay" aria-hidden="true">
+              <span class="tile__caption"><strong>Corazón y daga</strong><em>Neotradicional</em></span>
+              <span class="tile__zoom">+</span>
+            </span>
+          </button>
+
+          <button class="tile tile--dark" type="button" data-cat="fineline" data-title="El ojo" data-style="Fine line" aria-label="Ampliar El ojo, Fine line">
+            <span class="tile__art" aria-hidden="true">
+              <svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M30 150c50-58 190-58 240 0-50 58-190 58-240 0Z"/>
+                <circle cx="150" cy="150" r="44"/>
+                <circle cx="150" cy="150" r="18" fill="currentColor"/>
+                <circle cx="150" cy="150" r="9" stroke="#151412" stroke-width="3"/>
+                <path d="M150 84V54M104 96 84 76M196 96l20-20M70 128 42 118M230 128l28-10M198 190l22 18M102 190l-22 18M150 216v26"/>
+                <path d="M128 212c-4 20 4 32 12 42M160 216c-2 16 4 24 10 32"/>
+                <path d="M246 62l4 10 10 4-10 4-4 10-4-10-10-4 10-4Z" fill="currentColor"/>
+                <path d="M54 228l3 7 7 3-7 3-3 7-3-7-7-3 7-3Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="tile__overlay" aria-hidden="true">
+              <span class="tile__caption"><strong>El ojo</strong><em>Fine line</em></span>
+              <span class="tile__zoom">+</span>
+            </span>
+          </button>
+
+          <button class="tile tile--cream" type="button" data-cat="blackwork" data-title="Memento" data-style="Blackwork" aria-label="Ampliar Memento, Blackwork">
+            <span class="tile__art" aria-hidden="true">
+              <svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M150 42c-54 0-86 38-86 90 0 34 18 56 40 68v32c0 12 10 20 22 20h48c12 0 22-8 22-20v-32c22-12 40-34 40-68 0-52-32-90-86-90Z"/>
+                <ellipse cx="111" cy="136" rx="20" ry="24" fill="currentColor"/>
+                <ellipse cx="189" cy="136" rx="20" ry="24" fill="currentColor"/>
+                <path d="M150 158l-12 28h24Z" fill="currentColor" stroke="none"/>
+                <path d="M118 186c10 10 54 10 64 0"/>
+                <path d="M150 186v10"/>
+                <path d="M116 218v30M136 216v34M164 216v34M184 218v30"/>
+                <path d="M122 92c12-12 28-14 40-8"/>
+                <path d="M196 72l10-12"/>
+              </svg>
+            </span>
+            <span class="tile__overlay" aria-hidden="true">
+              <span class="tile__caption"><strong>Memento</strong><em>Blackwork</em></span>
+              <span class="tile__zoom">+</span>
+            </span>
+          </button>
+
+          <button class="tile tile--dark" type="button" data-cat="neotradicional" data-title="Rosa negra" data-style="Neotradicional" aria-label="Ampliar Rosa negra, Neotradicional">
+            <span class="tile__art" aria-hidden="true">
+              <svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M150 64c36-6 64 20 62 52-2 32-28 50-56 46"/>
+                <path d="M150 64c-32-8-62 14-66 46-4 32 18 54 44 52"/>
+                <path d="M84 110c-18 26-8 64 20 80 24 14 54 10 72-6"/>
+                <path d="M212 116c20 26 14 64-14 78-22 11-44 6-58-6"/>
+                <path d="M150 100c22-4 38 12 34 32-4 22-28 30-44 16-16-14-8-36 10-40"/>
+                <path d="M150 108c12 0 18 12 12 20-6 8-18 4-18-4"/>
+                <path d="M150 202c0 30-4 52-10 74"/>
+                <path d="M148 234c-20-8-36-6-48 4M150 250c20-6 38-2 48 8"/>
+              </svg>
+            </span>
+            <span class="tile__overlay" aria-hidden="true">
+              <span class="tile__caption"><strong>Rosa negra</strong><em>Neotradicional</em></span>
+              <span class="tile__zoom">+</span>
+            </span>
+          </button>
+
+          <button class="tile tile--red" type="button" data-cat="geometrico" data-title="Eclipse" data-style="Geométrico" aria-label="Ampliar Eclipse, Geométrico">
+            <span class="tile__art" aria-hidden="true">
+              <svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="150" cy="150" r="58"/>
+                <path d="M150 48V22M150 278v-26M48 150H22M278 150h-26M78 78 59 59M241 241l-19-19M222 78l19-19M78 222l-19 19"/>
+                <path d="M176 102C128 112 110 148 128 182c14 26 42 28 62 12-26-4-42-24-38-48 2-16 12-32 24-44Z" fill="currentColor" stroke="none"/>
+                <path d="M84 64l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="currentColor" stroke="none"/>
+                <path d="M216 214l3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="currentColor" stroke="none"/>
+              </svg>
+            </span>
+            <span class="tile__overlay" aria-hidden="true">
+              <span class="tile__caption"><strong>Eclipse</strong><em>Geométrico</em></span>
+              <span class="tile__zoom">+</span>
+            </span>
+          </button>
+
+          <button class="tile tile--cream" type="button" data-cat="blackwork" data-title="La espera" data-style="Blackwork" aria-label="Ampliar La espera, Blackwork">
+            <span class="tile__art" aria-hidden="true">
+              <svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 6 296 296M6 6 296 130M6 6 226 296M6 6 140 296M6 6 296 52M6 6 52 296"/>
+                <path d="M64 6A64 64 0 0 1 6 64M128 6A128 128 0 0 1 6 128M196 6A196 196 0 0 1 6 196M262 6A262 262 0 0 1 6 262"/>
+                <path d="M64 6Q52 36 6 64M128 6Q104 76 6 128M196 6Q160 124 6 196M262 6Q216 170 6 262"/>
+                <ellipse cx="212" cy="212" rx="16" ry="22" fill="currentColor"/>
+                <circle cx="212" cy="186" r="10" fill="currentColor"/>
+                <path d="M200 200c-18-10-26-22-24-36M202 214c-22-2-36-6-46-16M204 228c-18 8-30 16-36 30M210 238c-4 18-10 28-20 38M224 200c18-10 26-22 24-36M222 214c22-2 36-6 46-16M220 228c18 8 30 16 36 30M214 238c4 18 10 28 20 38"/>
+              </svg>
+            </span>
+            <span class="tile__overlay" aria-hidden="true">
+              <span class="tile__caption"><strong>La espera</strong><em>Blackwork</em></span>
+              <span class="tile__zoom">+</span>
+            </span>
+          </button>
+
+          <button class="tile tile--dark tile--type" type="button" data-cat="lettering" data-title="No regrets" data-style="Lettering" aria-label="Ampliar No regrets, Lettering">
+            <span class="tile__art" aria-hidden="true">
+              <span class="type-art">
+                <svg class="type-art__star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2l2.6 7.4L22 12l-7.4 2.6L12 22l-2.6-7.4L2 12l7.4-2.6z"/>
+                </svg>
+                No<br>regrets
+              </span>
+            </span>
+            <span class="tile__overlay" aria-hidden="true">
+              <span class="tile__caption"><strong>No regrets</strong><em>Lettering</em></span>
+              <span class="tile__zoom">+</span>
+            </span>
+          </button>
+        </div>
+
+        <p class="gallery__note" data-reveal>Cada pieza es única. Las imágenes son ilustraciones del archivo del estudio.</p>
+      </div>
+    </section>
+
+    <section class="section process" id="proceso">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">05 — Cómo funciona</p>
+          <h2 class="section__title">De la idea<br>a la <span class="outline">piel.</span></h2>
+        </div>
+        <ol class="process__list">
+          <li class="process__item" data-reveal>
+            <span class="process__num">01</span>
+            <h3>Consulta</h3>
+            <p>Nos cuentas la idea, la zona y el tamaño. Resolvemos dudas y vemos si encajamos.</p>
+            <span class="process__time">15 min · gratis</span>
+          </li>
+          <li class="process__item" data-reveal style="--d:.06s">
+            <span class="process__num">02</span>
+            <h3>Diseño</h3>
+            <p>Dibujamos una propuesta original. Ajustamos hasta que sea exactamente tuya.</p>
+            <span class="process__time">3–7 días</span>
+          </li>
+          <li class="process__item" data-reveal style="--d:.12s">
+            <span class="process__num">03</span>
+            <h3>Sesión</h3>
+            <p>Tatuamos en un espacio privado, con pausas y todo lo que necesites para estar a gusto.</p>
+            <span class="process__time">2–8 horas</span>
+          </li>
+          <li class="process__item" data-reveal style="--d:.18s">
+            <span class="process__num">04</span>
+            <h3>Cuidado</h3>
+            <p>Te llevas una guía de cuidados y revisamos la curación a las dos semanas.</p>
+            <span class="process__time">Seguimiento</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section quotes" id="opiniones">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow">06 — La gente</p>
+          <h2 class="section__title">Lo que se llevan<br><span class="red">a casa.</span></h2>
+        </div>
+        <div class="quotes__grid">
+          <figure class="quote" data-reveal>
+            <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>“Entré con una idea muy vaga y salí con una pieza que no me quito de la cabeza. Vera entendió todo antes que yo.”</blockquote>
+            <figcaption class="quote__who">
+              <span class="quote__avatar" aria-hidden="true">M</span>
+              <span>
+                <strong>Marina G.</strong>
+                <em>Brazo · Blackwork</em>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote" data-reveal style="--d:.06s">
+            <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>“El estudio es otro nivel: limpio, tranquilo y con una energía que te calma los nervios. Dante es un artista enorme.”</blockquote>
+            <figcaption class="quote__who">
+              <span class="quote__avatar" aria-hidden="true">L</span>
+              <span>
+                <strong>Lucas P.</strong>
+                <em>Pierna · Neotradicional</em>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote" data-reveal style="--d:.12s">
+            <div class="quote__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>“Iba por un micro tatuaje y acabé con un proyecto entero. Noa tiene una mano increíble para el detalle.”</blockquote>
+            <figcaption class="quote__who">
+              <span class="quote__avatar" aria-hidden="true">C</span>
+              <span>
+                <strong>Carla M.</strong>
+                <em>Costillas · Fine line</em>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="reserva">
+      <div class="container booking__grid">
+        <div class="booking__copy" data-reveal>
+          <p class="eyebrow">07 — Reserva</p>
+          <h2 class="section__title">Tu próximo<br><span class="outline">tatuaje</span> empieza aquí.</h2>
+          <p class="booking__lead">
+            Cuéntanos qué tienes en mente. Te responderemos con disponibilidad,
+            presupuesto orientativo y los siguientes pasos.
+          </p>
+          <ul class="booking__facts">
+            <li><span>Estudio</span><strong>Carrer de la Tinta 12, Barcelona</strong></li>
+            <li><span>Horario</span><strong>Mar–Sáb · 11:00–20:00</strong></li>
+            <li><span>Contacto</span><strong>hola@inkhaus.studio</strong></li>
+            <li><span>Teléfono</span><strong>+34 931 00 12 12</strong></li>
+          </ul>
+          <p class="booking__note">
+            No hacemos presupuestos por DM sin referencias. Escríbenos con tu idea,
+            zona del cuerpo y un tamaño aproximado.
+          </p>
+        </div>
+
+        <div class="booking__formwrap" data-reveal style="--d:.08s">
+          <form class="form" id="bookingForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Tu nombre" autocomplete="name" required>
+                <span class="field__error">Escribe tu nombre.</span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email" required>
+                <span class="field__error">Introduce un email válido.</span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="style">Estilo</label>
+                <select id="style" name="style" required>
+                  <option value="" selected disabled>Elige un estilo</option>
+                  <option value="blackwork">Blackwork</option>
+                  <option value="fineline">Fine line</option>
+                  <option value="neotradicional">Neotradicional</option>
+                  <option value="realismo">Realismo</option>
+                  <option value="geometrico">Geométrico</option>
+                  <option value="lettering">Lettering</option>
+                  <option value="no-lo-se">Aún no lo sé</option>
+                </select>
+                <span class="field__error">Elige un estilo.</span>
+              </div>
+              <div class="field">
+                <label for="date">Fecha orientativa</label>
+                <input id="date" name="date" type="date">
+                <span class="field__error">Revisa la fecha.</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="idea">Tu idea</label>
+              <textarea id="idea" name="idea" rows="4" placeholder="Zona del cuerpo, tamaño, referencias…" required></textarea>
+              <span class="field__error">Cuéntanos un poco más (mínimo 10 caracteres).</span>
+            </div>
+
+            <button class="btn btn--primary btn--block magnetic" type="submit">
+              <span>Solicitar cita</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </button>
+            <p class="form__small">Al enviar aceptas que te contactemos para coordinar tu cita.</p>
+          </form>
+
+          <div class="booking__success" id="bookingSuccess" role="status" aria-live="polite" hidden>
+            <span class="success__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6 9 17l-5-5"/>
+              </svg>
+            </span>
+            <h3>Solicitud enviada</h3>
+            <p>Gracias. Revisaremos tu idea y te escribiremos en menos de 24 horas.</p>
+            <button class="btn btn--ghost" id="resetForm" type="button"><span>Enviar otra solicitud</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="logo logo--lg" href="#top" aria-label="INKHAUS, ir al inicio">
+            <svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+              <path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1"/>
+            </svg>
+            INK<span>HAUS</span>
+          </a>
+          <p>Estudio de tatuajes independiente. Diseño original, agujas limpias y cero prisas. Barcelona, desde 2012.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Enlaces del pie">
+          <a href="#estudio">Estudio</a>
+          <a href="#estilos">Estilos</a>
+          <a href="#artistas">Artistas</a>
+          <a href="#galeria">Galería</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#reserva">Reserva</a>
+        </nav>
+      </div>
+
+      <div class="footer__mid">
+        <span class="footer__hours">Mar–Sáb · 11:00–20:00 · Cita previa</span>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.pinterest.com" target="_blank" rel="noopener">Pinterest</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Inkhaus Studio · Barcelona</span>
+        <span>Diseño hecho a mano. Como todo aquí.</span>
+        <a href="#top">Volver arriba ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de la galería" aria-hidden="true">
+    <div class="lightbox__backdrop" data-close></div>
+    <div class="lightbox__panel" role="document">
+      <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Cerrar">×</button>
+      <div class="lightbox__art" id="lightboxArt"></div>
+      <div class="lightbox__meta">
+        <strong id="lightboxTitle"></strong>
+        <em id="lightboxStyle"></em>
+      </div>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Anterior">←</button>
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Siguiente">→</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
